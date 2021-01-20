@@ -1,0 +1,57 @@
+{
+  "name": "egg-ssr",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "egg": {
+    "declarations": true
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "egg": "^2.15.1",
+    "egg-scripts": "^2.13.0",
+    "egg-sequelize": "^6.0.0",
+    "egg-view-react-ssr": "^3.0.0",
+    "mysql2": "^2.2.5",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "devDependencies": {
+    "@easy-team/easywebpack-cli": "^4.5.2",
+    "@easy-team/easywebpack-react": "^4.1.1",
+    "autod": "^3.0.1",
+    "autod-egg": "^1.1.0",
+    "cross-env": "^7.0.3",
+    "egg-bin": "^4.15.0",
+    "egg-ci": "^1.11.0",
+    "egg-mock": "^3.21.0",
+    "egg-webpack": "^4.5.4",
+    "egg-webpack-react": "^3.0.0",
+    "eslint": "^6.8.0",
+    "eslint-config-egg": "^7.1.0"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "scripts": {
+    "start": "egg-scripts start --daemon --title=egg-server-egg-ssr",
+    "stop": "egg-scripts stop --title=egg-server-egg-ssr",
+    "dev": "egg-bin dev",
+    "debug": "egg-bin debug",
+    "test": "npm run lint -- --fix && npm run test-local",
+    "test-local": "egg-bin test",
+    "cov": "egg-bin cov",
+    "lint": "eslint .",
+    "ci": "npm run lint && npm run cov",
+    "autod": "autod"
+  },
+  "ci": {
+    "version": "10"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "alice",
+  "license": "MIT"
+}
